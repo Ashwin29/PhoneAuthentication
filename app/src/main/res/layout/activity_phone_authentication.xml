@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.winision.phoneauth.PhoneAuthentication">
+
+    <EditText
+        android:id="@+id/phnNoTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="88dp"
+        android:hint="Phone Number"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/verifiTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:textAlignment="center"
+        android:inputType="number"
+        android:layout_below="@+id/phnNoTxt"
+        android:layout_marginTop="43dp"
+        android:hint="Verification Code" />
+
+    <Button
+        android:id="@+id/veriBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/verifiTxt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:text="Verify" />
+
+    <Button
+        android:id="@+id/authBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/veriBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:text="Authenticate" />
+
+    <ProgressBar
+        android:id="@+id/progress"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignTop="@+id/phnNoTxt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:visibility="invisible" />
+</RelativeLayout>
